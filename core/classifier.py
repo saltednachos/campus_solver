@@ -6,7 +6,8 @@ import google.generativeai as genai
 import streamlit as st
 
 # Setup Gemini
-api_key = os.environ.get("GEMINI_API_KEY")
+api_key = "AIzaSyD77HYbYfMYRGbszUrD5eGbLnYNWuyyumI" # Replaced faulty os.environ lookup
+
 if not api_key:
     try: api_key = st.secrets.get("GEMINI_API_KEY")
     except: pass
